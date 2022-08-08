@@ -6,7 +6,7 @@ const message = () => {
     const rand1 =   getRandomInt(0, 7);
     const rand2 =   getRandomInt(0, 7);
     const rand3 =   getRandomInt(-10, 35);
-    alert(daytime[rand1] + " " + names[rand2] + "! Die Temperatur heute beträgt " + rand3 + " Grad.");
+    console.log(daytime[rand1] + " " + names[rand2] + "! Die Temperatur heute beträgt " + rand3 + " Grad.");
 }
 
 function getRandomInt(min, max) {
@@ -14,3 +14,5 @@ function getRandomInt(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
   }
+
+  message();
